@@ -8,7 +8,7 @@ fn main() {
     let mut operator = String::new();
     let mut result = String::new();
 
-    println!("Welcome to this calculator!");
+    println!(" > Welcome to a rust calculator! < \n Select two numbers and an operator to calculate the result. \n Operators: +, -, * (multiply), / (divide) \n");
 
     /*
 
