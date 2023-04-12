@@ -1,4 +1,5 @@
 use std::io;
+use console;
 
 fn main() {
 
@@ -11,11 +12,11 @@ fn main() {
 
     /*
 
-    io::stdin().read_line(&mut num1).unwrap();
+    * io::stdin().read_line(&mut num1).unwrap();
 
-    is a simpler way of doing this:
+    * is a simpler way of doing this:
 
-    num1 = io::stdin().read_line(&mut num1).unwrap();
+    * num1 = io::stdin().read_line(&mut num1).unwrap();
 
     NOTE: it looks a lot cleaner tho :p
 
@@ -53,6 +54,9 @@ fn main() {
         _ => println!("You've chosen an invalid operator")
     };
 
-    print!("The result is: {}", result)
+    println!("The result is: {}", result);
 
+    println!("\nPress any key to exit...");
+    let mut input = String::new();
+    io::stdin().read_line(&mut input).unwrap();
 }
